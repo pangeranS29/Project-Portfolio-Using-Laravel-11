@@ -16,7 +16,7 @@
 
 <body>
 	<div class="preloader">
-		<img src="images/preloader.gif" alt="">
+		<img src="{{ asset('frontend/assets/images/preloader.gif') }}" alt="">
 	</div>
 
 	@include('frontend.layouts.navbar')
