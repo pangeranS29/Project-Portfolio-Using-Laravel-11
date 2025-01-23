@@ -3,10 +3,15 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProfileController;
 use Illuminate\Support\Facades\Route;
-    
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
 });
+
+Route::get('/blog', function () {
+    return view('frontend.blog');
+});
+
 
 Route::get('/dashboard',[DashboardController::class,'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
